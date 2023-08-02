@@ -1,0 +1,117 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+/* Common Css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(115deg,
+      rgb(37 78 43 / 70%),
+      rgb(51 78 140 / 59%)),
+    url(../IMG/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header Part */
+
+#header {
+  margin-bottom: 1.875rem;
+  padding: 0 0.625rem;
+}
+
+#title {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#title,
+#description {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Form Part */
+
+#survey-form {
+  background: rgba(27, 27, 50, 0.8);
+  height: 100%;
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  color: #fff;
+  padding: 2.5rem 0.625rem;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+  padding: 4px;
+}
+
+label {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 9px;
+}
+
+input,
+select,
+button,
+textarea {
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+input {
+  margin-right: 7px;
+}
+
+#submit {
+  background: #22a6b3;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+}
+
+select,
+option,
+label,
+input,
+button {
+  cursor: pointer;
+}
